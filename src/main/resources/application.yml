@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/Pokemon
+    username: root
+    password: donut
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServer2008Dialect
+    hibernate:
+      ddl-auto: validate
