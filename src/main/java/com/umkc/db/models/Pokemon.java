@@ -16,12 +16,10 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "Pokemon")
-@Inheritance(strategy = InheritanceType.JOINED)
 public class Pokemon {
 
 	@Id
 	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	protected Long id;
 
 	@Column(name = "pokedex_id")

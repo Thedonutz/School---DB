@@ -1,5 +1,5 @@
 package com.umkc.db.models;
 
-public class Move {
+public class Nature {
 
 }
