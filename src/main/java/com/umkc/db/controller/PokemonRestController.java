@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.umkc.db.models.Pokemon;
-import com.umkc.db.repository.PokemonRepository;
+import com.umkc.db.repository.PokemonRepo;
 
 @RestController
 public class PokemonRestController {
 
 	@Autowired
-	PokemonRepository pokeRepo;
+	PokemonRepo pokeRepo;
 
 	@RequestMapping("/findPokemon")
 	public @ResponseBody List<Pokemon> extractPokemon() {

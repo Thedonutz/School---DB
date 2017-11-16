@@ -14,5 +14,5 @@ import com.umkc.db.models.Pokemon;
  */
 @Transactional
 @Repository
-public interface PokemonRepository extends JpaRepository<Pokemon, Integer>{
+public interface PokemonRepo extends JpaRepository<Pokemon, Integer>{
 }
