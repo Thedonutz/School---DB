@@ -25,7 +25,7 @@ public class City implements Serializable {
 	@Column(name = "cityname")
 	private String cityName;
 	
-	@Id
+	//@Id
 	@Column(name = "regionname")
 	private String regionName;
 
