@@ -8,20 +8,20 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "pokemon_origin")
-public class PokemonOrigin implements Serializable {
-
+@Table(name = "pokemon_of_type")
+public class PokemonOfType implements Serializable {
+	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 486184184738158370L;
+	private static final long serialVersionUID = -7847007304476019081L;
 
 	@Id
 	@Column(name = "pokedex_number")
 	private Integer pokedexNumber;
 	
-	@Column(name = "regionname")
-	private String regionName;
+	@Column(name = "type_id")
+	private Integer typeId;
 
 	public Integer getPokedexNumber() {
 		return pokedexNumber;
@@ -31,12 +31,12 @@ public class PokemonOrigin implements Serializable {
 		this.pokedexNumber = pokedexNumber;
 	}
 
-	public String getRegionName() {
-		return regionName;
+	public Integer getTypeId() {
+		return typeId;
 	}
 
-	public void setRegionName(String regionName) {
-		this.regionName = regionName;
+	public void setTypeId(Integer typeId) {
+		this.typeId = typeId;
 	}
-	
+
 }

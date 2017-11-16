@@ -27,16 +27,19 @@ public class Pokemon implements Serializable {
 
 	@Column(name = "pokedex_number")
 	protected Integer pokedexNumber;
-	
+
 	@Column(name = "name")
 	private String name;
-	
+
+	@Column(name = "caught_by")
+	private String caughtBy;
+
 	@Column(name = "rarity")
 	private char rarity;
-	
+
 	@Column(name = "nature")
 	private String nature;
-	
+
 	@Column(name = "sex")
 	private char sex;
 
@@ -62,6 +65,14 @@ public class Pokemon implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getCaughtBy() {
+		return caughtBy;
+	}
+
+	public void setCaughtBy(String caughtBy) {
+		this.caughtBy = caughtBy;
 	}
 
 	public char getRarity() {
