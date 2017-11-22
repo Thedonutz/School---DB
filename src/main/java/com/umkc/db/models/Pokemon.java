@@ -32,10 +32,10 @@ public class Pokemon implements Serializable {
 	private String name;
 
 	@Column(name = "caught_by")
-	private String caughtBy;
+	private Integer caughtBy;
 
 	@Column(name = "rarity")
-	private char rarity;
+	private String rarity;
 
 	@Column(name = "nature")
 	private String nature;
@@ -67,19 +67,19 @@ public class Pokemon implements Serializable {
 		this.name = name;
 	}
 
-	public String getCaughtBy() {
+	public Integer getCaughtBy() {
 		return caughtBy;
 	}
 
-	public void setCaughtBy(String caughtBy) {
+	public void setCaughtBy(Integer caughtBy) {
 		this.caughtBy = caughtBy;
 	}
 
-	public char getRarity() {
+	public String getRarity() {
 		return rarity;
 	}
 
-	public void setRarity(char rarity) {
+	public void setRarity(String rarity) {
 		this.rarity = rarity;
 	}
 
